@@ -10,8 +10,8 @@ export class GoogleAnalyticsModule {
     return {
       module: GoogleAnalyticsModule,
       imports:[HttpModule],
-      providers: [HttpService],
-      exports: [HttpService],
+      providers: [],
+      exports: [],
     };
   }
 }

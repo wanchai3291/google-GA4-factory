@@ -1,17 +1,15 @@
 import { DynamicModule, Module } from "@nestjs/common";
 import { GoogleAnalyticsOptions } from "./options";
 import { GoogleAnalyticsService } from "./googleAnalytics.service";
-import { HttpModule } from "@nestjs/axios";
 
 @Module({})
 export class GoogleAnalyticsModule {
-  static forRoot(): DynamicModule {
+  static forRoot(options: GoogleAnalyticsOptions): DynamicModule {
     return {
-      imports:[],
       global: true,
       module: GoogleAnalyticsModule,
       providers: [],
-      exports: [GoogleAnalyticsService],
+      exports: [],
     };
   }
 }

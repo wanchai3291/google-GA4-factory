@@ -10,17 +10,17 @@ export class GoogleAnalyticsService {
 
     async generate() {
         const url = 'https://jsonplaceholder.typicode.com/todos/1';
-        const requestConfig: AxiosRequestConfig = {
-          method: 'get',
-          url: url,
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          params: {},
-        }
-        const result = await firstValueFrom(
-          this.httpService.request(requestConfig),
-        );
-        return result;
+        // const requestConfig: AxiosRequestConfig = {
+        //   method: 'get',
+        //   url: url,
+        //   headers: {
+        //     'Content-Type': 'application/json'
+        //   },
+        //   params: {},
+        // }
+        // const result = await firstValueFrom(
+        //   this.httpService.request(requestConfig),
+        // );
+        // return result;
     }
 }

@@ -1,7 +1,7 @@
 import { DynamicModule, Module } from "@nestjs/common";
 import { GoogleAnalyticsOptions } from "./options";
 import { GoogleAnalyticsService } from "./googleAnalytics.service";
-import { HttpModule } from "@nestjs/axios";
+import { HttpModule, HttpService } from "@nestjs/axios";
 
 @Module({})
 export class GoogleAnalyticsModule {
@@ -10,8 +10,8 @@ export class GoogleAnalyticsModule {
       global: true,
       module: GoogleAnalyticsModule,
       imports:[HttpModule.register({})],
-      providers: [],
-      exports: [],
+      providers: [HttpService],
+      exports: [HttpService],
     };
   }
 }

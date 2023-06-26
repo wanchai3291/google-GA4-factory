@@ -4,7 +4,7 @@ import { GoogleAnalyticsService } from "./googleAnalytics.service";
 
 @Module({})
 export class GoogleAnalyticsModule {
-  static forRoot(options: GoogleAnalyticsOptions): DynamicModule {
+  static forRoot(options: {}): DynamicModule {
     return {
       global: true,
       module: GoogleAnalyticsModule,

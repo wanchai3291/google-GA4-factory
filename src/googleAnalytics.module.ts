@@ -7,7 +7,7 @@ import { HttpModule } from "@nestjs/axios";
 export class GoogleAnalyticsModule {
   static forRoot(): DynamicModule {
     return {
-      imports:[HttpModule.register({})],
+      imports:[],
       global: true,
       module: GoogleAnalyticsModule,
       providers: [],

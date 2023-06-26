@@ -21,7 +21,6 @@ export class CustomAxiosService {
         const result = await firstValueFrom(
           this.httpService.request(requestConfig),
         );
-        console.log(result);
-        
+        return result.data
     }
 }

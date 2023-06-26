@@ -1,7 +1,7 @@
 export class GoogleAnalyticsOptions {
     googleAnalyticsIdentifier: GoogleAnalyticsIdentifier;
     deviceIdentifier: DeviceIdentifier;
-    gtag?: GTag
+    gtag: GTag
 }
 export class GoogleAnalyticsIdentifier {
     publicKey: string

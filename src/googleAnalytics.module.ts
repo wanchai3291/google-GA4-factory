@@ -8,7 +8,7 @@ export class GoogleAnalyticsModule {
         options: GoogleAnalyticsOptions,
     ): DynamicModule {
         return {
-            providers: [GoogleAnalyticsService],
+            providers: [],
             exports: [GoogleAnalyticsService],
             module: GoogleAnalyticsModule,
         };

@@ -1,5 +1,6 @@
 import { DynamicModule, Global, Module, Provider, Type } from "@nestjs/common";
 import { HttpModule } from "@nestjs/axios";
+import { CustomAxiosService } from "./ga4/customAxiosService";
 
 @Global()
 @Module({})
@@ -8,8 +9,8 @@ export class GoogleAnalyticsModule {
     return {
       module: GoogleAnalyticsModule,
       imports:[HttpModule.register({})],
-      providers: [],
-      exports: [],
+      providers: [CustomAxiosService],
+      exports: [CustomAxiosService],
     };
   }
 }

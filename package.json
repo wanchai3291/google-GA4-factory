@@ -1,0 +1,33 @@
+{
+  "name": "google-ga4-factory",
+  "version": "1.0.0",
+  "description": "lib for demo",
+  "main": "dist/index",
+  "types": "dist/index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && tsc",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wanchai3291/google-GA4-factory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wanchai3291/google-GA4-factory/issues"
+  },
+  "homepage": "https://github.com/wanchai3291/google-GA4-factory#readme",
+  "dependencies": {
+    "@nestjs/axios": "^3.0.0",
+    "@nestjs/common": "^10.0.3",
+    "axios": "^1.4.0",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.2",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.5"
+  }
+}

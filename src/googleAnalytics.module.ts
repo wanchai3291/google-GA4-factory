@@ -8,7 +8,6 @@ export class GoogleAnalyticsModule {
     return {
       global: true,
       module: GoogleAnalyticsModule,
-      imports: [],
       providers: [],
       exports: [],
     };

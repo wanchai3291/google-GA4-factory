@@ -1,5 +1,5 @@
 {
-  "name": "google-ga4-factory",
+  "name": "@nestjs/google-ga4-factory",
   "version": "1.0.0",
   "description": "lib for demo",
   "main": "dist/index",

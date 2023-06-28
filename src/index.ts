@@ -1,2 +1,2 @@
-export * from './googleAnalytics.module'
-export * from './ga4/customAxiosService'
+export * from './google-analytic.module';
+export * from './google-analytics/google-analytic.service';
